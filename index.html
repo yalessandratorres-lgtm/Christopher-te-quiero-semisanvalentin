@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Güerito 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="musica" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2021/07/Rainy-Day-Plans.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="pantalla-sobre" class="container">
+        <div class="envelope-wrapper" onclick="abrirSobre()">
+            <div class="envelope">
+                <div class="stamp">❤️</div>
+            </div>
+            <p class="tap-me">Hola Chris, mi güerito...<br><b>Haz clic para abrir 💌</b></p>
+        </div>
+    </div>
+
+    <div id="pantalla-pregunta" class="container oculto">
+        <h2 class="titulo">¿Quieres ser mi San Valentín? 💘</h2>
+        <div class="contenedor-gatito">
+            <img id="img-gatito" src="https://media.tenor.com/IC9_8v9o63kAAAAi/peach-cat-crying.gif" alt="Gatito">
+        </div>
+        <p id="mensaje-gatito">¡Dime que sí! ✨</p>
+        <div class="botones">
+            <button class="btn-si" onclick="aceptar()">¡SÍ! 💕</button>
+            <button id="btn-no" class="btn-no" onclick="rechazar()">No 😿</button>
+        </div>
+    </div>
+
+    <div id="pantalla-postal" class="container-postal oculto">
+        <div class="lado-izquierdo">
+            <h2 class="titulo-postal">¡No te arrepentirás!</h2>
+            <p class="frase">
+                Para el amor de mi vida:<br>
+                Si pudiera elegir un lugar seguro, sería a tu lado.<br>
+                Cuanto más tiempo estoy contigo, más te amo.
+            </p>
+            <div class="contador-caja">
+                <p>Mi amor por ti comenzó hace...</p>
+                <div id="contador"></div>
+            </div>
+            <p class="firma">Te quiero mucho Christopher ❤️<br><span>Atte: Yesika</span></p>
+        </div>
+
+        <div class="lado-derecho">
+            <div class="arbol-container">
+                <img src="https://i.imgur.com/9M0QZzA.png" alt="Árbol de Corazones" class="arbol-img">
+                <div id="petalos-container"></div>
+            </div>
+            <img src="https://media.tenor.com/u_f66t0C86UAAAAi/mochi-mochi-peach-cat-cat.gif" class="gatito-final" alt="Gatito Feliz">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
